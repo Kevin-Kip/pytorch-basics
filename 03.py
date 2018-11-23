@@ -1,6 +1,7 @@
 import numpy as np
 
 e = np.e
+results = []
 
 # SOftmax using numpy
 def softmax(x):
@@ -10,7 +11,6 @@ def softmax(x):
 # A very inneficient version of softmax
 def plainmax(x):
     probs = 0 # this holds the (e^z1+e^z2+e^z3)
-    results = []
     for item in x:
         probs += (e ** item)
 
@@ -20,5 +20,9 @@ def plainmax(x):
     return results
 
 if __name__ == '__main__':
-    print(softmax([2,2]))
-    print(plainmax([2,2]))
+    input_array = [2,3]
+    plainmax(input_array)
+    item = np.max(input_array)
+    probability = np.max(results)
+    percentage = (np.max(input_array) / np.sum(input_array))*100
+    print("Most likely is {0} and its probability {1}, which translates to {2}%".format(item,probability, percentage))
