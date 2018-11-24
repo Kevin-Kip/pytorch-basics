@@ -20,9 +20,14 @@ def plainmax(x):
     return results
 
 if __name__ == '__main__':
-    input_array = [2,3]
+    input_array = [2,4,2,1,1]
     plainmax(input_array)
+    sum_of_input = np.sum(input_array)
     item = np.max(input_array)
     probability = np.max(results)
-    percentage = (np.max(input_array) / np.sum(input_array))*100
-    print("Most likely is {0} and its probability {1}, which translates to {2}%".format(item,probability, percentage))
+    percentage = (np.max(input_array) / sum_of_input)*100
+
+    for i,o in zip(input_array, results):
+        print("{0} >> {1} >> {2}%".format(i,o,(i/sum_of_input) * 100))
+
+    print("\n Most likely item is {0} at {1}%".format(item,percentage))
