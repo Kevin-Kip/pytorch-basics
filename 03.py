@@ -20,7 +20,7 @@ def plainmax(x):
     return results
 
 if __name__ == '__main__':
-    input_array = [2,4,2,1,1]
+    input_array = [1,1,1,1,8,1,1]
     plainmax(input_array)
     sum_of_input = np.sum(input_array)
     item = np.max(input_array)
