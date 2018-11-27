@@ -9,9 +9,9 @@ Perceptron code which uses a sigmoid function as the activation function.
 
 ## 03.py
 Perceptron still, but uses softmax as the activation function.
-**Output**
+**Sample Run**
 ```bash
-  python3 03.py
+  >> python3 03.py
   Most likely is 3 and its probability 0.7310585786300049, which translates to 60.0%
 ```
 <img src="screenshots/03.png" width="600">
