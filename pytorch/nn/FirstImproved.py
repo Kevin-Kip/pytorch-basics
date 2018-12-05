@@ -1,4 +1,5 @@
 import torch.nn.functional as F
+from torch import nn
 
 class FirstImproved(nn.Module):
     def __init__(self):
