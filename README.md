@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/Kevin-Kip/pytorch-basics.svg?style=svg)](https://circleci.com/gh/Kevin-Kip/pytorch-basics)
+
 ## ML Examples
 This is the code I wrote learning machine learning on the Facebook Pytorch Challenge offered [here](https://classroom.udacity.com/nanodegrees/nd188/) on [Udacity](ssroom.udacity.com/me).
 
